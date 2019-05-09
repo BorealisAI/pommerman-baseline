@@ -142,7 +142,7 @@ def _stop_condition(board, pos, exclude_agent=True):
     if utility.position_is_wall(board, pos):
         return True
     if not exclude_agent:
-        if utility.position_is_agent(board, position):
+        if utility.position_is_agent(board, pos):
             return True
     return False
 
